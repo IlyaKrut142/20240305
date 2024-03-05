@@ -8,7 +8,7 @@ def find_telephone(data, fio):
     for record in data:
         if record['FIO'] == fio:
             return record['Telephone']
-    return 'Телефон не найден'# Чтение данных из файла
+    return 'Телефон не найден'
 data = read_csv('FIOandTelephone.csv')
 
 def main():
@@ -17,7 +17,7 @@ def main():
     if telephone != 'Телефон не найден':
         print(f'Номер телефона: {telephone}')
     else:
-        print(telephone)# Вызов основной функции
+        print(telephone)
 if __name__ == "__main__":
     main()
 
